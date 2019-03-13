@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ClientHome"></activity>
+        <activity android:name=".CarerHome"></activity>
+        <activity android:name=".ClientHome" />
         <activity android:name=".ClientRegister" />
         <activity android:name=".CarerRegister" />
         <activity android:name=".CarerLogin" />

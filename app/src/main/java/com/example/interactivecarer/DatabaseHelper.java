@@ -35,6 +35,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         long res = db.insert("registerclient", null, contentValues);
         db.close();
         return res;
+
     }
 
     public boolean checkClient(String username, String password) {

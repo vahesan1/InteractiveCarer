@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.191" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/carerusername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.317" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/carerpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -60,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453" />
+        app:layout_constraintVertical_bias="0.467" />
 
     <TextView
         android:id="@+id/textView"
@@ -135,7 +135,7 @@
         app:layout_constraintVertical_bias="0.41" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/carerscreenlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

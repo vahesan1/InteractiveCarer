@@ -29,8 +29,6 @@ public class ClientLogin extends AppCompatActivity {
         mClientUsername = (EditText)findViewById(R.id.clientusername);
         mClientPassword = (EditText)findViewById(R.id.clientpassword);
         mClientScreenLogin = (Button)findViewById(R.id.clientscreenlogin);
-
-
         mRegisterClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

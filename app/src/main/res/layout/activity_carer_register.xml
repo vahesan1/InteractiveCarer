@@ -8,7 +8,7 @@
 
 
     <EditText
-        android:id="@+id/clientusername"
+        android:id="@+id/ncarerusername"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -26,7 +26,7 @@
         app:layout_constraintVertical_bias="0.331" />
 
     <EditText
-        android:id="@+id/clientpassword"
+        android:id="@+id/ncarerpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.453" />
 
     <EditText
-        android:id="@+id/clientpassword2"
+        android:id="@+id/ncarerpassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -134,7 +134,7 @@
         app:layout_constraintVertical_bias="0.553" />
 
     <Button
-        android:id="@+id/clientregisterbutton"
+        android:id="@+id/carerregisterbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

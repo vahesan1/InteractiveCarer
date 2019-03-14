@@ -12,6 +12,7 @@ public class DatabaseHelperC extends SQLiteOpenHelper {
     public static final String CARER_USERNAME = "cusername";
     public static final String CARER_PASSWORD = "cpassword";
 
+
     public DatabaseHelperC(Context context) {
         super(context, CARER_DATABASE, null, 1);
     }
@@ -32,6 +33,7 @@ public class DatabaseHelperC extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put("cusername", carer);
         contentValues.put("cpassword", cpassword);
+
         long res = db.insert("registercarer", null, contentValues);
         db.close();
         return res;
@@ -53,5 +55,13 @@ public class DatabaseHelperC extends SQLiteOpenHelper {
         else
             return false;
 
+    }
+
+    public Cursor viewData(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "Select * from " +CARER_TABLE;
+        Cursor cursor =db.rawQuery(query,null);
+
+        return cursor;
     }
 }

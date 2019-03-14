@@ -38,12 +38,12 @@ public class CarerRegister extends AppCompatActivity {
         nButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nClientUser = nCarerUsername.getText().toString().trim();
-                String nClientPass = nCarerPassword.getText().toString().trim();
-                String nClientPassCnf = nCarerPasswordCnf.getText().toString().trim();
+                String carer = nCarerUsername.getText().toString().trim();
+                String cpassword = nCarerPassword.getText().toString().trim();
+                String carerPassCnf = nCarerPasswordCnf.getText().toString().trim();
 
-                if (nClientPass.equals(nClientPassCnf)) {
-                    Long val = dbc.addCarer(nClientUser, nClientPass);
+                if (cpassword.equals(carerPassCnf)) {
+                    Long val = dbc.addCarer(carer, cpassword);
                     if (val > 0) {
                         Toast.makeText(CarerRegister.this, "Successfully Registered Carer", Toast.LENGTH_SHORT).show();
                         Intent successfulRegister = new Intent(CarerRegister.this, CarerLogin.class);
